@@ -15,7 +15,7 @@ function calculator(){
     else{
         var Obtained=a+b+c+d+e;
         document.getElementById('Obtained').innerHTML=Obtained;
-        var per=Obtained/500*100;
+        var per= Math.floor(Obtained/500*100);
         document.getElementById('per').innerHTML=per;
         if(a>30 && b>30 && c>30 && d>30 && e>30){
        document.getElementById('remarks').innerHTML="<span style='color:#229954'>'Pass'</span>";
@@ -23,7 +23,7 @@ function calculator(){
         else{
             document.getElementById('remarks').innerHTML="<span style='color:#C70039'>'Fail'</span>";
         }
-    if(per>=90){
+    if(per>=80){
         document.getElementById('grade').innerHTML="<span style='color: #F1C40F'>'A+'</span>";
     }
     else if(per>=70){
