@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+  <h1 style="color: white;"><span>Grading</span>&nbsp;App </h1>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td scope="row "><label>English:</label></td>
+            <td > <input type="number" name="" id="one" placeholder="Enter your marks"></td>
+            
+        </tr>
+        <tr>
+            <td scope="row"><label>Mathematics:</label></td>
+            <td ><input type="number" name="" id="two" placeholder="Enter your marks"></td>
+            
+        </tr>
+
+        <tr>
+            <td scope="row"><label>Physics:</label></td>
+            <td ><input type="number" name="" id="three" placeholder="Enter your marks"></td>
+            
+        </tr>
+
+        <tr>
+            <td scope="row"><label>Chemistry:</label></td>
+            <td ><input type="number" name="" id="four" placeholder="Enter your marks"></td>
+            
+        </tr>
+
+        <tr>
+            <td scope="row"><label>Computer:</label></td>
+            <td ><input type="number" name="" id="five" placeholder="Enter your marks"></td>
+            
+        </tr>
+    </tbody>
+</table>
+
+<div class="W-100 mt-4">
+<button type="button" data-bs-toggle="button" aria-pressed="false" autocomplete="off" onclick="calculator()"  style="color: white;">Calculate</button>
+</div>
+    </div>
+
+
+    <div class="container" id="lower">
+        <div class="col mt-4">
+  <h1 style="color: white;"><span>To</span>tal </h1>
+</div>
+
+<table class="lower W-100">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td scope=" row" style="color: white;">Total Marks:</td>
+            <td class="setting" style="color: white;">500</td>
+           
+          
+        </tr>
+        <tr>
+            <td style="color: white;">Obtained:</td>
+            <td id="Obtained" class="setting" style="color: white;" ></td>
+             </tr>
+
+             <tr>
+                <td style="color: white;">percentage:</td>
+                <td id="per" class="setting" style="color: white;"></td>
+                 </tr>
+
+                 <tr>
+                    <td style="color: white;">Grade:</td>
+                    <td id="grade" class="setting" style="color: white;"></td>
+                     </tr>
+                     <tr>
+                        <td style="color: white;">Remarks:</td>
+                        <td id="remarks" class="setting" style="color: white;"></td>
+                         </tr>
+    </tbody>
+</table>
+
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
